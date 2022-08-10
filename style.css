@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:ital@1&display=swap');
 
 /* Reset */
 * {
@@ -16,6 +16,14 @@
   color: #333;
   background: #fff;
 }
+.bg-green {
+  background: #28a745;
+  color: #fff;
+}
+.bg-blue {
+  background: #0284d0;
+  color: #fff;
+}
 /* Main Styling */
 html,body {
   font-family: 'Open Sans', sans-serif;
@@ -30,7 +38,7 @@ ul {
   list-style: none;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   padding-bottom: 10px;
 }
 
@@ -45,8 +53,22 @@ p {
   border-radius: 5px;
   cursor: pointer;
   border:none;
-  background: #28a745;
   margin-top: 20px;
+}
+
+.btn-1 {
+  border: #fff 1px solid;
+}
+
+.btn i {
+  padding-right: 5px;
+}
+
+.btn-hover:hover {
+  opacity: 0.9;
+}
+.font {
+  font-size: 40px;
 }
 /* Navbar */
 
@@ -130,18 +152,80 @@ p {
 }
 
 .solutions {
+  display: flex;  
+  align-items: stretch;
+}
+
+.solutions img {
+  width: 50vw;
+  height: 70vh;
+}
+.solutions .content {
+  padding: 120px 30px;
+  text-align: left;
+  width: 50vw;
+  height: 70vh;
+}
+/* Business Cases */
+
+#cases {
+  padding: 40px 30px;
+  
+}
+.top {
+  text-align: center;
+  color: #333;
+  padding-bottom: 30px;
+}
+.cases-photos {
   display: flex;
-  align-items: center;
-  justify-content: center;
+}
+#cases-photos {
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.cases-photos img {
+  width: 23vw;
+  height: 35vh;
+}
+
+/* Main - Blog*/
+
+#blog {
+  display: flex;
+  align-items: stretch;
 }
 
 img {
-  height: 500px;
+  width: 50vw;
+  height: 80vh;
 }
 .content {
-  padding: 20px;
+  padding: 160px 30px;
   text-align: left;
-  background: #28a745;
-  height: 500px;
+  width: 50vw;
+  height: 80vh;
+}
+
+/* Main - Professionals */
+
+#professionals {
+  padding: 40px 30px;
+}
+
+.professionals-photos {
+  display: flex;
   
 }
+#photo {
+  align-items: stretch;
+  justify-content: space-between;
+  padding-top: 20px;
+  text-align: center;
+}
+#photo img {
+  border-radius: 50%;
+  height: 80%;
+  width: 95%;
+  }
