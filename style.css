@@ -16,6 +16,10 @@
   color: #333;
   background: #fff;
 }
+.bg-dark {
+  color: #fff;
+  background: #333;
+}
 .bg-green {
   background: #28a745;
   color: #fff;
@@ -60,6 +64,9 @@ p {
   border: #fff 1px solid;
 }
 
+.btn-2 {
+  width: 100%;
+}
 .btn i {
   padding-right: 5px;
 }
@@ -228,4 +235,55 @@ img {
   border-radius: 50%;
   height: 80%;
   width: 95%;
-  }
+}
+
+/* Main - Contact */
+
+#contact {
+  display: flex;
+  height: 550px;
+}
+
+#contact img {
+  height: 550px;
+}
+.contact-group {
+  padding: 120px 30px;
+  background-color: rgb(238, 235, 235);
+  flex-grow: 1;
+}
+
+.form-group {
+  margin-bottom: 20px; 
+}
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+}
+.form-group input:focus {
+  outline-color: #28a745;
+}
+
+/* Footer */
+
+#footer {
+  height: 200px;
+  text-align: center;
+  padding: 70px 0;
+  
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+
+}
+
+.midias i {
+  padding: 0 15px;
+}
+
+.midias i:hover {
+  color: #28a745;
+}
